@@ -270,7 +270,7 @@ def build_pipeline(model: BaseEstimator = None):
 
     components = [
         ("column_transformer", column_transformer),
-        ("standard_scaler", StandardScaler()),
+        ("standard_scaler", StandardScaler(with_mean=False)),
     ]
 
     if model:
