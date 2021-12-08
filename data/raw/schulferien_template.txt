@@ -1,0 +1,57 @@
+# Header
+Winterferien
+Osterferien
+Pfingstferien
+Sommerferien
+Herbstferien
+Weihnachtsferien
+
+# 2019
+Baden-Württemberg
+<Zeitraum Winterferien, z.B. 
+    "-", 
+    "15.04. - 27.04.", 
+    "28.10. - 30.10.+31.10.", 
+    "31.05.+11.06.", 
+    "04.10.+07.10. - 19.10.", 
+    "04.10.+07.10. - 12.10.+01.11.">
+<Zeitraum Osterferien>
+<Zeitraum Pfingstferien>
+<Zeitraum Sommerferien>
+<Zeitraum Herbstferien>	
+<Zeitraum Weihnachtsferien>
+Bayern 
+<Zeiträume>
+Berlin 
+<Zeiträume>
+Brandenburg 
+<Zeiträume>
+Bremen 
+<Zeiträume>
+Hamburg 
+<Zeiträume>
+Hessen 
+<Zeiträume>
+Mecklenburg-Vorpommern 
+<Zeiträume>
+Niedersachsen 
+<Zeiträume>
+Nordrhein-Westfalen 
+<Zeiträume>
+Rheinland-Pfalz 
+<Zeiträume>
+Saarland 
+<Zeiträume>
+Sachsen 
+<Zeiträume>
+Sachsen-Anhalt 
+<Zeiträume>
+Schleswig-Holstein 
+<Zeiträume>
+Thüringen 
+<Zeiträume>
+
+# 2020
+<Zeiträume für alle Bundesläner>
+
+<Weitere Jahre mit Zeiträumen für alle Bundesländer>

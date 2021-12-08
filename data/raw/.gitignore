@@ -1,3 +1,4 @@
 *.ics
 *.txt
 *.csv
+!schulferien_template.txt
