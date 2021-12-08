@@ -1,4 +1,5 @@
 .venv/
+.git/
 notebooks/
 reports/
 mlruns/
@@ -11,5 +12,4 @@ models/
 data/
 !data/interim/weather_station01327_Lommersum.csv
 !data/interim/weather_station02667_Koeln-Bonn.csv
-!data/processed/public_holidays.csv
-!data/processed/school_holidays.csv
+!data/processed/
