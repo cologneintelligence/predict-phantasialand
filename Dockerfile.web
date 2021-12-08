@@ -1,0 +1,7 @@
+# Dockerfile for deployment via heroku. This exposes the streamlit app on the port 
+# requested by Heroku
+FROM python:3.8
+WORKDIR /app
+COPY . .
+RUN pip install -r requirements.txt
+CMD streamlit run --server.port $PORT src/app/app.py

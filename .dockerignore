@@ -1,0 +1,15 @@
+.venv/
+notebooks/
+reports/
+mlruns/
+
+# only include the one model used in production
+models/
+!models/best/
+
+# only include necessary data files
+data/
+!data/interim/weather_station01327_Lommersum.csv
+!data/interim/weather_station02667_Koeln-Bonn.csv
+!data/processed/public_holidays.csv
+!data/processed/school_holidays.csv
