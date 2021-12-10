@@ -86,3 +86,7 @@ target/
 
 # Mypy cache
 .mypy_cache/
+
+# MLflow
+mlflow.db
+mlruns/
