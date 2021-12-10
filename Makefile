@@ -26,7 +26,7 @@ requirements: test_environment
 	$(PYTHON_INTERPRETER) -m pip install -r requirements_dev.txt
 
 ## Make Dataset
-data: requirements
+data:
 	$(PYTHON_INTERPRETER) src/data/process_weather.py \
 		data/raw/dwd_weather/tageswerte_KL_02667_akt.zip \
 		data/raw/dwd_weather/tageswerte_KL_02667_19570701_20201231_hist.zip \
@@ -39,24 +39,21 @@ data: requirements
 		data/raw/Feiertage\ Deutschland.ics data/processed/public_holidays.csv
 	$(PYTHON_INTERPRETER) src/data/process_school_holidays.py \
 		data/raw/schulferien.txt data/processed/school_holidays.csv
-	unzip -n data/raw/wartezeiten_app.csv.zip -d data/raw/ || true
 	$(PYTHON_INTERPRETER) src/data/process_waiting_times.py \
 		data/raw/wartezeiten_app.csv data/interim/waiting_times_training.csv \
 		--exploration data/interim/waiting_times_exploration.csv
-	zip data/interim/waiting_times_exploration.csv.zip \
-		data/interim/waiting_times_exploration.csv
 	$(PYTHON_INTERPRETER) src/data/create_training_data.py data/processed/
 
-e2e_test: requirements
+e2e_test:
 	$(PYTHON_INTERPRETER) src/evaluation/test_e2e.py model/evaluation/MeanEstimator.csv
 	$(PYTHON_INTERPRETER) src/evaluation/test_e2e.py -m "models:/LGBMRegressor/4" model/evaluation/LGBMRegressor_4.csv
 	$(PYTHON_INTERPRETER) src/evaluation/test_e2e.py -m "models:/XGBRegressor/1" model/evaluation/XGBRegressor_1.csv
 
 # remove all data that can be reconstructed from raw data by running `make data`
 clear-data: 
-	rm data/processed/*.csv || true
-	rm data/interim/*.csv || true
-	rm data/processed/*.csv.zip || true
+	rm -f data/processed/*.csv || true
+	rm -f data/interim/*.csv || true
+	rm -f data/processed/*.csv.zip || true
 
 ## Delete all compiled Python files
 clean:
