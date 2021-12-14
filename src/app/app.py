@@ -22,11 +22,13 @@ st.set_page_config(
     initial_sidebar_state="collapsed",
     menu_items={
         "Get help": None,
-        "Report a Bug": None,
+        "Report a Bug": "https://github.com/cologneintelligence/predict-phantasialand/issues",
         "About": """
 Waiting time predictions for Phantasialand attractions. 
 
-Created by Felix B. Müller, CIDD (2021)""",
+View the code on GitHub: [predict-phantasialand](https://github.com/cologneintelligence/predict-phantasialand)
+
+Created by [Felix B. Müller](https://github.com/felixbmuller), [CIDD](https://www.cologne-intelligence.de/) (2021)""",
     },
 )
 
