@@ -11,19 +11,25 @@ To this end, waiting time data from
 holidays were analyzed and used to train different machine learning models ([Linear
 Regression](https://scikit-learn.org/),
 [XGBoost](https://xgboost.readthedocs.io/en/stable/) and
-[LightGBM](https://github.com/microsoft/LightGBM)). We tuned the hyperparameters of the
+[LightGBM](https://github.com/microsoft/LightGBM)). I tuned the hyperparameters of the
 best model (it was LightGBM) and serve it as a WebApp using
 [Streamlit](https://streamlit.io/).
+
+You can learn more about this project on our blog: [CI
+Insights](https://www.cologne-intelligence.de/blog) (German).
+
+You can try the WebApp here: [http://predict-phantasialand.herokuapp.com/](http://predict-phantasialand.herokuapp.com/)
 
 This is how the interface looks like:
 
 ![Streamlit UI](reports/figures/streamlit_ui.png)
 
-You can learn more about this project on our blog: [CI
-Insights](https://www.cologne-intelligence.de/blog) (German).
 
-This repository comes without the data and the trained models. In order to reproduce our
-results, you will have to download the data and train the models by yourself.
+
+This repository comes without the data and the trained models. In order to reproduce the
+results, you will have to download the data and train the models by yourself. (If you are 
+a member of Cologne Intelligence, you can also find them in the CIDD sharepoint, look for 
+"Einstiegsprojekt Phantasialand".)
 
 Installation
 ------------
